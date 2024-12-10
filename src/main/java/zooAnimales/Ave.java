@@ -7,14 +7,18 @@ import java.util.ArrayList;
 public class Ave extends Animal{
     private static ArrayList<Ave> listado;
     static public int halcones = 0;
+    public static int numAnimales = 0;
     static public int aguilas = 0;
     private String colorPlumas;
 
     public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas){
         super(nombre,edad,habitat,genero);
         this.colorPlumas = colorPlumas;
+        Ave.numAnimales++;
     }
-    public Ave(){}
+    public Ave(){
+        Ave.numAnimales++;
+    }
 
     public static int cantidadAves(){
         return Ave.getListado();

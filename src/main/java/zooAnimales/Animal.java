@@ -6,6 +6,7 @@ public class Animal {
     private static int totalAnimales = 0;
     private String nombre;
     private int edad;
+
     private String habitat;
     private String genero;
     private Zona zona;
@@ -40,7 +41,7 @@ public class Animal {
                 "Anfibios: "+ Anfibio.getListado();
     }
     public String toString(){
-        return "Mi nombre es " + this.nombre +", tengo una edad de "+ this.edad + ", habito en "+ this.habitat + " y mi genero es "+ this.genero +", la zona en la que me ubico es " + zona.getNombre() +", en el "+ zona.getZoo() +".";
+        return "Mi nombre es " + this.nombre +", tengo una edad de "+ this.edad + ", habito en "+ this.habitat + " y mi genero es "+ this.genero +".";
     }
 
     public String getNombre() {

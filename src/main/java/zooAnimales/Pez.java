@@ -8,6 +8,7 @@ public class Pez extends Animal{
     private static ArrayList<Pez> listado;
     public static int salmones = 0;
     public static int bacalaos = 0;
+    public static int numAnimales = 0;
     private String colorEscamas;
     private int cantidadAletas;
 
@@ -15,8 +16,11 @@ public class Pez extends Animal{
         super(nombre,edad,habitat,genero);
         this.colorEscamas = colorEscamas;
         this.cantidadAletas = cantidadAletas;
+        Pez.numAnimales += 1;
     }
-    public Pez(){}
+    public Pez(){
+        Pez.numAnimales += 1;
+    }
     public static int cantidadPeces(){return Pez.getListado();}
     public String movimiento(){
         return "nadar";

@@ -8,6 +8,7 @@ public class Reptil extends Animal{
     private static ArrayList<Reptil> listado;
     public static int iguanas = 0;
     public static int serpientes = 0;
+    public static int numAnimales = 0;
     private String colorEscamas;
     private int largoCola;
 
@@ -15,8 +16,12 @@ public class Reptil extends Animal{
         super(nombre,edad,habitat,genero);
         this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
+
+        Reptil.numAnimales++;
     }
-    public Reptil(){}
+    public Reptil(){
+        Reptil.numAnimales++;
+    }
     public static int cantidadReptiles(){
         return listado.size();
     }

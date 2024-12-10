@@ -18,7 +18,7 @@ public class Zoologico {
         this.ubicacion = ubicacion;
     }
     public Zoologico(){
-        this("","",new ArrayList<Zona>());
+        this(null,null,new ArrayList<Zona>());
     };
 
     public void agregarZonas(Zona zona){

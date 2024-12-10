@@ -20,7 +20,7 @@ public class Zona {
         this.nombre = nombre;
     }
     public Zona(){
-        this("",new Zoologico(),new ArrayList<Animal>());
+        this(null,new Zoologico(),new ArrayList<Animal>());
     }
     public void agregarAnimales(Animal animal){
         this.animales.add(animal);
